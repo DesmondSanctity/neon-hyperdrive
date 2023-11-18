@@ -1,0 +1,25 @@
+{
+  "name": "native-pg",
+  "version": "1.0.0",
+  "description": "Using Native Postgres for Database Queries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesmondSanctity/neon-hyperdrive.git"
+  },
+  "keywords": [
+    "postgres",
+    "native",
+    "database",
+    "sql"
+  ],
+  "author": "Desmond Obisi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DesmondSanctity/neon-hyperdrive/issues"
+  },
+  "homepage": "https://github.com/DesmondSanctity/neon-hyperdrive#readme"
+}
