@@ -13,7 +13,7 @@ cd native-pg
 ```bash
 npm install
 ```
-- I assume you have a Neon Postgres connection URL, if you do not have, check this [instruction](https://neon.tech/docs/connect/connect-from-any-app)on how to get one. It is always prefixed by `postgresql://`.
+- I assume you have a Neon Postgres connection URL, if you do not have, check this [instruction](https://neon.tech/docs/connect/connect-from-any-app) on how to get one. It is always prefixed by `postgresql://`.
 - After installation, create a file called `.env` in the root of the project and add the following line to it.
 ```bash
 PORT=5000
