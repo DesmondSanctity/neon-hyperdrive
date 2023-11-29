@@ -13,7 +13,7 @@ cd neon
 ```bash
 npm install
 ```
-- I assume you have a Neon Postgres connection URL, if you do not have, check this [instruction](https://neon.tech/docs/connect/connect-from-any-app)on how to get one. It is always prefixed by `postgresql://`.
+- I assume you have a Neon Postgres connection URL, if you do not have, check this [instruction](https://neon.tech/docs/connect/connect-from-any-app) on how to get one. It is always prefixed by `postgresql://`.
 - After installation, assuming you have Wrangler CLI installed, login to your Wrangler CLI to authenticate use using this command
 ```bash
 npx wrangler login
