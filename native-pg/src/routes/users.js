@@ -1,7 +1,6 @@
 import { Router } from "express";
 
 import * as userController from "../controllers/userControllers.js";
-import Auth from "../middlewares/auth.js";
 
 const userRouter = Router();
 
@@ -24,7 +23,7 @@ const userRouter = Router();
  *      500:
  *        description: Server Error
  */
-userRouter.route("/").get(Auth, userController.getAll);
+userRouter.route("/").get(userController.getAll);
 
 /**
  * @openapi
@@ -48,7 +47,7 @@ userRouter.route("/").get(Auth, userController.getAll);
  *      500:
  *        description: Server Error
  */
-userRouter.route("/:id").get(Auth, userController.getOne);
+userRouter.route("/:id").get(userController.getOne);
 
 
 export default userRouter;
