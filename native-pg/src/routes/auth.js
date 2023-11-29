@@ -21,27 +21,23 @@ const authRouter = Router();
  *           schema:
  *            type: object
  *            required:
+ *              - name
  *              - email
+ *              - phone
  *              - password
- *              - fullName
- *              - phoneNumber
- *              - dateOfBirth
  *            properties:
+ *              name:
+ *                type: string
+ *                default: John Doe
  *              email:
  *                type: string
  *                default: johndoe@mail.com
+ *              phone:
+ *                type: string
+ *                default: 1234567890
  *              password:
  *                type: string
  *                default: johnDoe100@user!!
- *              fullName:
- *                type: string
- *                default: John Doe
- *              phoneNumber:
- *                type: string
- *                default: 1255443277
- *              dateOfBirth:
- *                type: string
- *                default: 22-07-1997
  *     responses:
  *      201:
  *        description: Created Successfully

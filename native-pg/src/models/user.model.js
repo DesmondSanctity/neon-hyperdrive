@@ -3,14 +3,22 @@ import db from "../database/connect.js";
 
 const { DataTypes } = Sequelize;
 
-const Users = db.define('users', {
-    userId: {
+const Users = db.define('native_users', {
+    id: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
         primaryKey: true,
         allowNull: false
     },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
     email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    phone: {
         type: DataTypes.STRING,
         allowNull: false,
     },
@@ -18,18 +26,6 @@ const Users = db.define('users', {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    fullName: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
-    phoneNumber: {
-        type: DataTypes.STRING,
-        allowNull: true,
-    },
-    dateOfBirth: {
-        type: DataTypes.DATE,
-        allowNull: true,
-    }
 
 }, {
     freezeTableName: true,

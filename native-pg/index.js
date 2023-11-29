@@ -46,7 +46,7 @@ app.get("/", (req, res) => {
   res.status(201).json("Home GET Request");
 });
 
-app.use("/api/v1/user", userRouter);
+app.use("/api/v1/users", userRouter);
 app.use("/api/v1/auth", authRouter);
 
 app.listen(port, () => {

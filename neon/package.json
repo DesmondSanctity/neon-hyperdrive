@@ -1,28 +1,20 @@
 {
-  "name": "neon-pg",
-  "version": "1.0.0",
-  "description": "Using Neon Postgres with Cloudflare Hyperdrive for faster queries",
-  "main": "index.js",
+  "name": "hono-example",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DesmondSanctity/neon-hyperdrive.git"
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "@types/pg": "^8.10.9",
+    "typescript": "^5.0.4",
+    "wrangler": "^3.0.0"
   },
-  "keywords": [
-    "neon",
-    "serverless",
-    "postgres",
-    "clouflare",
-    "hyperdrive",
-    "workers",
-    "database"
-  ],
-  "author": "Desmond Obisi",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DesmondSanctity/neon-hyperdrive/issues"
-  },
-  "homepage": "https://github.com/DesmondSanctity/neon-hyperdrive#readme"
+  "dependencies": {
+    "hono": "^3.10.3",
+    "pg": "^8.11.3"
+  }
 }

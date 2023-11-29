@@ -2,7 +2,6 @@ import db from "../database/connect.js";
 import Users from "./user.model.js";
 
 try {
-  await db.authenticate();
   await db
     .sync({ alter: true })
     .then(() => {

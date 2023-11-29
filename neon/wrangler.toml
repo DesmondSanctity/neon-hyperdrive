@@ -1,0 +1,16 @@
+name = "hono-example"
+main = "src/index.ts"
+compatibility_date = "2023-11-21"
+
+node_compat = true
+
+# Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
+# Note: Use secrets to store sensitive data.
+# Docs: https://developers.cloudflare.com/workers/platform/environment-variables
+# [vars]
+
+# Bind another Worker service. Use this binding to call another Worker without network overhead.
+# Docs: https://developers.cloudflare.com/workers/platform/services
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "bab1f5f7ee454c379ef27a8a7f6ae0f2"
