@@ -4,6 +4,7 @@ const paginate = (Model, options) => {
     const where = options.where || {}
     const include = options.include || []
     const order = options.order || []
+    const attributes = options.attributes || {}
     
     const offset = (page - 1) * perPage
     
@@ -12,7 +13,8 @@ const paginate = (Model, options) => {
       include,
       limit: perPage,
       offset,
-      order
+      order,
+      attributes
     }
     
     return Model.findAndCountAll(paginateOptions)
