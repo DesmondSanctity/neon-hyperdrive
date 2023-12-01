@@ -12,4 +12,4 @@ Each directory has its own instruction for setup and running the benchmark. I us
 
 Note: The benchmark is against non-mutating queries like GET. Other mutating queries like INSERT, PUT and CREATE are not considered in this benchmark as Hyperdrive does not cache them.
 
-<iframe width="640" height="294" src="https://www.loom.com/embed/ac9ac7b1b68d4fd3afa0c78896463e35?sid=abc3decd-26ec-4dd0-9d86-14be0eacca40" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+You can watch a demo [here](https://www.loom.com/share/ac9ac7b1b68d4fd3afa0c78896463e35?sid=2dc9cbcb-aa69-41c8-8a78-d21d24523344) to understand the whole thing.
