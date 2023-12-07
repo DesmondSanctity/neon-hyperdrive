@@ -2,11 +2,11 @@
 Using Neon Postgres with Cloudflare Hyperdrive for faster queries
 
 
-This is a demo project that benchmarked for speed between two application.
+This is a demo project that benchmarked for speed between two applications.
 
 - The first one is a simple [User API](/neon/) application that uses the [Cloudflare Hyperdrive](https://developers.cloudflare.com/hyperdrive/) bindings to connect to a Neon Postgres database. Hyperdrive is a dev tool by Cloudflare to make database queries faster by distributing them global among their servers.
 
-- The second application is a simple [User API](/native-pg/) application that uses the [Sequelize ORM](https://sequelize.org/) to connect to a Neon Postgres database.
+- The second one is a simple [User API](/native-pg/) application that uses the [Sequelize ORM](https://sequelize.org/) to connect to a Neon Postgres database.
 
 Each directory has its own instruction for setup and running the benchmark. I used [Postman Web](https://go.postman.co/home) to run the requests.
 
