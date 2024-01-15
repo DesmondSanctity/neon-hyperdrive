@@ -3,7 +3,6 @@ import { Hono } from 'hono';
 import { cors } from 'hono/cors'
 import { prettyJSON } from 'hono/pretty-json'
 import { getUsers, getUser, createUser } from './queries'
-import { db } from './dbconnect';
 
 
 
